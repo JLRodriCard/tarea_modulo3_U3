@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tareajs_2_m3_u3</title>
+</head>
+
+<body>
+    <script>
+        var numeros = [];
+        var input_numeros = "";
+
+        for (i = 1; i <= 10; i++) {
+            if (input_numeros !== 0) {
+                input_numeros = parseInt(prompt("Ingrese un número"));
+                numeros.push(input_numeros);
+            }
+        }
+
+        //console.log(Math.max.apply(null, numeros));//
+        document.write('El numero mayor es:')
+        document.write((Math.max.apply(null, numeros)));
+
+
+    </script>
+</body>
+
+</html>
